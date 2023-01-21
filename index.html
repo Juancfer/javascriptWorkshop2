@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7109d51c44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./assets/logo.png" alt="Logo Spotify">
+    </header>
+    <main class="player">
+        <section class="player__cover">
+            <img class="player__cover_image" src="./assets/bad_cover.png" alt="cover">
+        </section>
+        <section class="player__main">
+            <div class="player__text">
+                <h2 class="player__song"></h2>
+                <p class="player__author"></p>
+            </div>
+            <div class="player__time">
+                <div class="player__minutes">
+                    <p class="player__current"></p>
+                    <p class="player__total"></p>
+                </div>
+                <div class="player__bar">
+                    <div class="player__progress">
+                    </div>
+                </div>
+                <div class="player__extra">
+                    <button class="player__buttons shuffle" value="shuffle">
+                        <span class="fa-solid fa-shuffle"></span>
+                    </button>
+                    <button class="player__buttons repeat" value="repeat">
+                        <span class="fa-solid fa-rotate-right"></span>
+                    </button>
+                </div>
+                    
+            </div>
+            <div class="player__controls">
+                <button class="player__buttons backward" value="backward">
+                    <span class="fa-solid fa-backward-step fa-2x"></span>
+                </button>
+                <button class="player__buttons play" value="play">
+                    <span class="fa-solid fa-play fa-2x"></span>
+                </button>
+                <button class="player__buttons pause" value="pause">
+                    <span class="fa-solid fa-pause fa-2x"></span>
+                </button>
+                <button class="player__buttons forward" value="forward">
+                    <span class="fa-solid fa-forward-step fa-2x"></span>
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
